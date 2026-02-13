@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy 1st Birthday 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!---Header selection-->
+  <section class="hero">
+    <h1>🎉 Happy Birthday Beti Pallavi  🎉</h1>
+    <h2>My Cute Beti ❤️</h2>
+    <p>15 February 2026</p>
+    <div id="countdown"></div>
+  </section>
+
+<section class="gallery">
+  <h2>📸 Memories</h2>
+
+  <div class="images">
+    <img src="gulli.jpeg" onclick="openPopup(0)">
+      <img src="g2.jpeg" onclick="openPopup(1)">
+      <img src="g3.jpeg" onclick="openPopup(2)">
+      <img src="g4.jpeg" onclick="openPopup(3)">
+      <img src="g5.jpeg" onclick="openPopup(4)">
+      <img src="g6.jpeg" onclick="openPopup(5)">
+      <img src="g7.jpeg" onclick="openPopup(6)">
+      <img src="g8.jpeg" onclick="openPopup(7)">
+      <img src="g9.jpeg" onclick="openPopup(8)">
+      <img src="g10.jpeg" onclick="openPopup(9)">
+      <img src="g3 (2).jpeg" onclick="openPopup(10)">
+      <img src="g11.jpeg" onclick="openPopup(11)">
+    
+  </div>
+</section>
+
+<div id="Carousel-slider">
+  <section>
+    <div class="Carousel-slider">
+      <div class="silder-item g1"></div>
+      <div class="silder-item g2"></div>
+      <div class="silder-item g3"></div>
+      <div class="silder-item g4"></div>
+      <div class="silder-item g5"></div>
+      <div class="silder-item g6"></div>
+      <div class="silder-item g7"></div>
+      <div class="silder-item g8"></div>
+      <div class="silder-item g9"></div>
+      <div class="silder-item g10"></div>
+      <div class="silder-item gulli"></div>
+
+    </div>
+  </section>
+</div>
+
+<!-- POPUP MODAL -->
+<div id="popup" class="popup">
+  <span class="close" onclick="closePopup()">×</span>
+  <img id="popupImg">
+</div>
+    
+  <!-- WISHES -->
+  <section class="wishes">
+    <h2>💌 Birthday Wishes</h2>
+    <ul id="wishList"></ul>
+
+    <input type="text" id="wishInput" placeholder="Write your wish">
+    <button onclick="addWish()">Add Wish</button>
+    <p id="thankYouMsg" style="display:none; color:green; font-weight:bold;">
+  💖 Thank you for wishing!
+</p>
+
+  </section>
+
+  <!-- MUSIC -->
+  <section class="music">
+    <button onclick="playMusic()">🎵 Play Music</button>
+    <audio id="bgMusic" src="music/birthday.mp3"></audio>
+  </section>
+
+  <script src="script.js"></script>
+  <div id="popup" class="popup">
+  <span class="close" onclick="closePopup()">×</span>
+  <img id="popupImg">
+</div>
+
+</body>
+</html>
